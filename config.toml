@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://limin-chen.github.io/"
 languageCode = "en-us"
 title = "荔闽"
 theme = "hugo-strata-theme"
