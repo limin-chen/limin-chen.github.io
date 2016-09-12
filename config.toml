@@ -1,0 +1,108 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+title = "荔闽"
+theme = "hugo-strata-theme"
+disqusShortname = "limin"
+
+# Enable Google Analytics by inserting your tracking code
+googleAnalytics = ""
+# Define how many posts should appear on a site
+paginate = 10
+
+[params]
+    # To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+    name = "荔闽"
+    description = "荔闽的博客"
+
+    # Format dates with Go's time formatting
+    date_format = "2006-01-02"
+
+    # Add custom assets with their paths relative to the static folder
+    custom_js   = []
+    custom_css  = []
+
+
+    [params.sidebar]
+        # Replace the avatar with a picture of your own under static/images
+        avatar = "avatar.jpg"
+        # Use Markdown to format the string. This works nearly all over the theme
+        bio = "关注教育科技和一切好玩的新技术！"
+
+        # The icons will be shown if you enter your username
+        linkedin = "chen-limin-1b318aa1"
+
+        copyright = [
+            "&copy; 荔闽",
+            "Design: [HTML5 UP](//html5up.net)",
+            "Demo Images: [Unsplash](//unsplash.com/)"
+        ]
+
+    [params.about]
+        hide  = false
+        title = "荔闽 博客"
+        content = "有得写一个很长的自我介绍或者其他的"
+
+
+    [params.portfolio]
+        hide  = false
+        title = "最近文章"
+
+        # The images and thumbnails are stored under static/images
+        # Create and change subfolders as you like
+        [[params.portfolio.gallery]]
+            image = "fulls/01.jpg"
+            thumb = "thumbs/01.jpg"
+            title = "言语的暴力"
+            link = "2014-03-17-言语的暴力"
+            description = "不知道是否是因为最近特别玻璃心的原因，老是能够感受到来自言语的暴力。"
+
+        [[params.portfolio.gallery]]
+            image = "fulls/02.jpg"
+            thumb = "thumbs/02.jpg"
+            title = "向前一步"
+            link = "2014-03-19-向前一步"
+            description = "《Lean In: Women, Work, and the Will to Lead》(《向前一步》)读书笔记"
+
+    [params.recentposts]
+        hide  = true
+        title = "最近的文章"
+
+    [params.contact]
+        hide  = false
+        title = "联系我"
+        content = "关于教育科技联系我"
+
+        address = [
+          "北京市海淀区苏州街",
+          "维亚大厦南1楼创新社孵化器一层西"
+        ]
+        phone = "010-53695051"
+
+        # Since this template is static, the contact form uses www.formspree.io as a
+        # proxy. The form makes a POST request to their servers to send the actual
+        # email. Visitors can send up to a 1000 emails each month for free.
+        #
+        # What you need to do for the setup?
+        #
+        # - set your email address under 'email' below
+        # - upload the generated site to your server
+        # - send a dummy email yourself to confirm your account
+        # - click the confirm link in the email from www.formspree.io
+        # - you're done. Happy mailing!
+        email = "limin.chen@jmdedu.com"
+
+        [params.contact.form]
+            # Set custom strings for the form if your native
+            # language isn't English
+            name = "姓名"
+            email = "邮箱"
+            message = "消息"
+            submit = "联系我"
+
+
+# Menu links that appear on the left sidebar
+[[menu.main]]
+    name = "Home"
+    url  = "/"
+    weight = 0
