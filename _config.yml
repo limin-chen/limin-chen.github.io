@@ -1,0 +1,9 @@
+name: Limin Chen
+markdown: redcarpet
+highlighter: true
+
+layout: default
+comments: true
+permalink: pretty
+paginate: 5
+paginate_path: "page:num"

@@ -1,0 +1,40 @@
+<div class="content" id="home">
+  <div id="sidebar-button">
+    <img src="/images/sidebar-button.png">
+  </div>
+  <div id="post-info">
+    <div id="cover-photo-container">
+      <img id="cover-photo" src="/images/{{ page.cover }}">
+    </div>
+    <div id="info-container">
+      <h1 id="title">{{ page.title }}</h1>
+      <span id="date">{{ page.date | date: "%Y-%m-%d" }}</a>
+    </div>
+  </div>
+
+  <div class="post">
+    {{ content }}
+  </div>
+  {{% if post.comments %}}
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'limin'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  {{% endif %}}
+  <div class="colophon">
+    <p>
+      <span id="pub-date">发表于 {{ page.date | date: "%Y-%m-%d" }}</span> 
+    </p>
+  </div>
+</div>

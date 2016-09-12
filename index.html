@@ -1,0 +1,33 @@
+---
+layout: default
+title: Home
+---
+
+<div class="content" id="home">
+  <div id="sidebar-button">
+    <img src="/images/sidebar-button.png">
+  </div>
+
+  <div class="post">
+    {% for post in paginator.posts %}
+    {% include post_in_index.html %}
+    {% endfor %}
+
+
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if paginator.page == 2 %}
+      <a href="/" class="previous">Previous</a>
+      {% elsif paginator.previous_page %}
+      <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+      {% endif %}
+      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+      <a href="/page{{ paginator.next_page }}" class="next">Next</a>
+      {% else %}
+      {% endif %}
+    </div>
+
+
+  </div>
+</div>

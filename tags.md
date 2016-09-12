@@ -1,0 +1,14 @@
+---
+layout: default
+title: Tags
+---
+
+{% for tag in site.tags %}
+
+<li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70 }}%">
+	<a href="/tag/{{ tag | first | slugize }}/">
+    {{ tag | first }}
+  </a>
+</li>
+
+{% endfor %}
