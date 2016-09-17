@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+BASEDIR=$(dirname "$0")
+cd "$BASEDIR"
+
+/usr/local/bin/hugo
+GIT_DEPLOY_DIR=public GIT_DEPLOY_BRANCH=master ./deploy.sh
+
