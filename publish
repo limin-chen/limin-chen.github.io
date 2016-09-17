@@ -4,6 +4,8 @@ set -e
 BASEDIR=$(dirname "$0")
 cd "$BASEDIR"
 
+git commit -am "new"
+
 /usr/local/bin/hugo
 GIT_DEPLOY_DIR=public GIT_DEPLOY_BRANCH=master ./deploy.sh
 
