@@ -45,27 +45,11 @@ paginate = 10
 
 
     [params.portfolio]
-        hide  = false
+        hide  = true
         title = "最近文章"
 
-        # The images and thumbnails are stored under static/images
-        # Create and change subfolders as you like
-        [[params.portfolio.gallery]]
-            image = "fulls/01.jpg"
-            thumb = "thumbs/01.jpg"
-            title = "言语的暴力"
-            link = "2014-03-17-言语的暴力"
-            description = "不知道是否是因为最近特别玻璃心的原因，老是能够感受到来自言语的暴力。"
-
-        [[params.portfolio.gallery]]
-            image = "fulls/02.jpg"
-            thumb = "thumbs/02.jpg"
-            title = "向前一步"
-            link = "2014-03-19-向前一步"
-            description = "《Lean In: Women, Work, and the Will to Lead》(《向前一步》)读书笔记"
-
     [params.recentposts]
-        hide  = true
+        hide  = false
         title = "最近的文章"
 
     [params.contact]
