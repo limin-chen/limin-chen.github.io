@@ -5,6 +5,6 @@ BASEDIR=$(dirname "$0")
 cd "$BASEDIR"
 
 ( cd ../../ && pwd )
-( cd ../../ && hugo )
+( cd ../../ && /usr/local/bin/hugo )
 ( cd ../../ && GIT_DEPLOY_DIR=public GIT_DEPLOY_BRANCH=master ./deploy.sh)
 
