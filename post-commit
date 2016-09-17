@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+( cd ../../ && pwd )
+( cd ../../ && hugo )
+( cd ../../ && GIT_DEPLOY_DIR=public GIT_DEPLOY_BRANCH=master ./deploy.sh)
+
